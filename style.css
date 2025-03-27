@@ -1,0 +1,275 @@
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #021F59; /* Warna latar navbar */
+    margin: 0;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 80px;
+    justify-content: end;
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    padding: 10px 0;
+    width: 150px;
+    background-color: #021F59; /* Warna latar dropdown */
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+}
+
+nav ul li ul li {
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #F2E205; /* Warna latar body */
+    color: #021F59; /* Warna teks default */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F2E205; /* Warna teks navbar */
+    font-weight: bold;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #05C7F2; /* Warna teks navbar saat hover */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Navigasi Aktif */
+nav ul li a.active {
+    color: #F20519;
+    font-weight: bold;
+    border-bottom: 2px solid #F20519;
+}
+
+/* Layout Section */
+.page-section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    scroll-margin-top: 80px; /* Untuk offset navbar fixed */
+}
+
+#hero {
+    margin-top: 150px;
+    display: flex;
+}
+
+#hero .col {
+    width: 50%;
+}
+
+#fotoutama {
+    width: 100%;
+}
+
+section {
+    margin: 0 80px;
+}
+
+.col#hero2 {
+    display: flex;
+    justify-content: center;
+}
+
+#row3 button {
+    margin: 5px 8px;
+    background-color: #F20519; /* Warna tombol */
+    color: #F2E205; /* Warna teks tombol */
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+}
+
+#row3 button:hover {
+    background-color: #F20530; /* Warna tombol saat hover */
+    color: #FFFFFF; /* Warna teks tombol saat hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* Warna latar tabel */
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+td[colspan="2"] {
+    width: 50%;
+}
+
+table h2, table h1 {
+    color: #021F59; /* Warna judul tabel */
+}
+
+table p {
+    font-size: 14px;
+    color: #F20519; /* Warna teks tabel */
+}
+
+@keyframes duar {
+    0% { transform: translate(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translate(0); }
+}
+
+td img {
+    display: block;
+    margin: auto;
+    animation: duar 1s ease-in-out infinite;
+}
+
+#favorite {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    align-items: center;
+}
+
+div.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFFFFF; /* Warna latar card */
+    border-radius: 8px;
+    padding: 15px;
+    width: 125px;
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Efek hover card */
+    background-color: #05C7F2; /* Warna latar card saat hover */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card h2 {
+    color: #021F59; /* Warna judul card */
+}
+
+.card p {
+    color: #F20519; /* Warna teks card */
+}
+
+/* contact */
+
+.contact {
+    background-color: #021F59; /* Warna biru tua dari colorway */
+    padding: 40px;
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0px 10px 30px rgba(2, 31, 89, 0.2);
+    color: white;
+}
+
+.contact h1 {
+    color: #F2E205; /* Warna kuning untuk judul */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #05C7F2; /* Warna biru muda untuk teks deskripsi */
+    font-style: italic;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    margin-bottom: 8px;
+    color: #F2E205; /* Warna kuning untuk label */
+    font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #05C7F2;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1em;
+}
+
+.contact input[type="text"]:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #F2E205;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact button[type="submit"] {
+    background-color: #F20519; /* Warna merah untuk tombol */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    align-self: center;
+    width: 200px;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #F20530; /* Warna merah lebih terang saat hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(242, 5, 24, 0.4);
+
+}
+
+
+
+/* footer */
+
+footer {
+    margin: 0 80px;
+}

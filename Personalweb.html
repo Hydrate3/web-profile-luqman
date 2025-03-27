@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Los_Pollos_Hermanos_logo.png" alt="gwe" width="100"></li>
+                <li><a href="#hero">About Me</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#favorite">Favorite Things</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="" target="_blank">minum air</a></li>
+            </ul>
+        </nav>
+    </header>
+=    <main>
+        <section id="hero"class="page-section">
+            <div class="col">
+                <div class="row">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row"></div>
+                <p>Selamat datang di web pribadi saya Luqman. Saya adalah seorang mahasiswa Program Studi Sistem Informasi yang sedang menempuh perkuliahan semester 4. Saya suka untuk memaham cara kerja sesuatu oleh karena itu saya masuk ke fakultas ini untuk mempelajari cara kerja bidang komputer baik itu secara hardware atau software. </p>
+                <div class="row" id="row3">
+                    <button>Ganti Foto</button>
+                    <br>
+                </div>
+
+            </div>
+            <div class="col" id="hero2">
+                <div class="row" >
+                    <img id="fotoutama" src="fototo/bukber.jpg" alt="" >
+                </div>
+            </div>
+        </section>
+        <!-- section experience -->
+         <section id="experience"class="page-section">
+            <table > 
+                <!-- baris 1 -->
+                <tr>
+                    <!-- kolom 1 -->
+                    <td rowspan="3"width=25%>
+                        <img src="fototo/botol.jpeg" alt="Me" width="250">
+                    </td>
+                    <!-- kolom 2 -->
+                    <td colspan="2" >
+                        <h2>My Experience</h2>
+                    </td>
+                    
+                </tr>
+                <!-- baris 2 -->
+                <tr>
+                    <!-- kolom 1 -->
+                    <td width = 25%>
+                        <h2>Algoritma dan Pemrograman 1 dan 2</h2>
+                        <p>
+                            Menguasai algoritma dasar dalam bahasa pemrograman python seperti sorting dan searching
+                    </td> 
+                    <!-- kolom 2 -->
+                    <td>
+                        <h2>Sistem Basis Data</h2>
+                        <p>
+                            Mampu menggunakan bahasa query untuk mengolah dan memanipulasi data
+                        </p>
+                    </td>
+                </tr>
+                <!-- baris 3 -->
+                <tr>
+                    <td>
+                        <h2>Pemrograman Berorientasi Objek</h2>
+                        <p>
+                            Memahami pemrograman dengan bentuk MVC dalam bahasa c#
+                        </p>
+                    </td>
+                    <td>
+                        <h2>Pemrograman Web</h2>
+                        <p>
+                            Memahami penggunaan html dengan menerapkan css dan javascript
+                        </p>
+                    </td>
+                </tr>
+            </table>
+         </section>
+
+        <section id="favorite" class="page-section" >
+            <h1>Favorite Things</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Wawan</h2>
+                    <img src="fototo/wawan.jpg" alt="" width="250">
+                    <p>Kucing kesayanganku yang hobinya ngajakin berantem kucing di perumahan</p>
+                </div>
+                <div class="card">
+                    <h2>Nanang</h2>
+                    <img src="fototo/nanang.jpg" alt="" width="250">
+                    <p>Adiknya Wawan, penakut jadinya lebih sering dirumah daripada Wawan</p>
+                </div>
+                </div>
+            </div>
+
+      
+        </section>
+
+         <!-- form -->
+         <section id="contact" class="page-section">
+            <div class="contact">
+                <h1>contact me</h1>
+                <p>sertakan kegelapan diri</p>
+                <form action="#">
+                    <!-- nama -->
+                    <label for="Nama">Nama</label>
+                    <input type="text">
+                    <!-- Pesan -->
+                    <label for="Pesan">Pesan</label>
+                    <textarea name="Pesan" id="#" rows="6"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit">sumbit</button>
+                    
+                </form>
+            </div>
+         </section>
+    </main> 
+    <footer>
+        <h3>RB Ahmad Luqman Adhikara <br>
+        232410101068</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
